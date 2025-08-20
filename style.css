@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap");
+:root {
+  --rose-800: hsl(332, 51%, 32%);
+  --brown-800: hsl(14, 45%, 36%);
+
+  --stone-900: hsl(24, 5%, 18%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-100: hsl(30, 54%, 90%);
+
+  --white: hsl(0, 0%, 100%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: var(--stone-100);
+}
+main {
+  width: 50%;
+  margin: 30px 0;
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 24px;
+}
+h1 {
+  font-family: "Young Serif", serif;
+  font-size: 2.5rem;
+}
+h2 {
+  font-family: "Young Serif", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--brown-800);
+}
+img {
+  width: 100%;
+  margin: 0 auto 24px auto;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.description {
+  margin: 24px 0;
+  line-height: 1.5;
+  font-weight: 100;
+  font-size: 0.9rem;
+  color: var(--stone-600);
+}
+
+.Preparation {
+  background-color: var(--rose-50);
+  padding: 24px 16px;
+  border-radius: 16px;
+  margin: 0 auto 24px auto;
+}
+
+.Preparation h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: var(--rose-800);
+  font-family: inherit;
+}
+.Preparation ul {
+  padding-left: 20px;
+  color: var(--stone-600);
+}
+.Preparation ul li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  padding-left: 0.5em;
+}
+.Preparation ul li::marker {
+  color: var(--rose-800);
+}
+
+.Ingredients ul {
+  padding-left: 20px;
+  color: var(--stone-600);
+  list-style-type: square;
+}
+.Ingredients ul li {
+  font-size: 1rem;
+  margin: 8px 0;
+  padding-left: 0.5em;
+}
+.Ingredients ul li::marker {
+  color: var(--brown-800);
+}
+
+.Instructions ol {
+  padding-left: 20px;
+  color: var(--stone-600);
+}
+.Instructions ol li {
+  font-size: 1rem;
+  margin: 12px 0;
+  padding-left: 0.5em;
+}
+.Instructions ol li::marker {
+  color: var(--brown-800);
+  font-weight: 800;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--stone-150);
+  margin: 24px 0;
+}
+.Nutrition p {
+  font-size: 0.9rem;
+  color: var(--stone-600);
+  margin-bottom: 12px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+tr {
+  border-bottom: 1px solid var(--stone-150);
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+th,
+td {
+  padding: 15px 0;
+}
+
+th {
+  text-align: left;
+  font-weight: 400;
+  color: var(--stone-900);
+}
+
+td {
+  text-align: left;
+  font-weight: 600;
+  color: var(--brown-800);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding: 0;
+  }
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 12px;
+    border-radius: 8px;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  img {
+    margin-bottom: 16px;
+    border-radius: 8px;
+  }
+  .description {
+    font-size: 0.85rem;
+    margin: 16px 0;
+  }
+  .Preparation ul li {
+    font-size: 1.1rem;
+  }
+  table {
+    font-size: 14px;
+  }
+  th,
+  td {
+    padding: 8px 0;
+  }
+}
