@@ -154,6 +154,14 @@ td {
   color: var(--brown-800);
 }
 
+@media screen and (max-width: 750px) and (min-width: 376px) {
+  body {
+    padding: 0;
+  }
+  main {
+    width: 70%;
+  }
+}
 @media screen and (max-width: 375px) {
   body {
     padding: 0;
@@ -162,15 +170,17 @@ td {
     width: 100%;
     margin: 0;
     padding: 12px;
-    border-radius: 8px;
+    border-radius: 12px;
   }
   h1 {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
   h2 {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
   }
-
+  .Preparation h2 {
+    font-size: 1.1rem;
+  }
   img {
     margin-bottom: 16px;
     border-radius: 8px;
@@ -179,11 +189,14 @@ td {
     font-size: 0.85rem;
     margin: 16px 0;
   }
-  .Preparation ul li {
-    font-size: 1.1rem;
+  .Preparation ul li,
+  .Instructions ol li,
+  .Ingredients ul li {
+    font-size: 0.9rem;
   }
+
   table {
-    font-size: 14px;
+    font-size: 0.8rem;
   }
   th,
   td {
